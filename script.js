@@ -1,38 +1,3 @@
-// function MyComponent1() {
-//     return (
-//       <div>
-//         <h1>Witaj, świecie!</h1>
-//         <h2>Jestem ambitna/y, więc przerabiam kurs React.js!</h2>
-//       </div>
-//     );
-//   } 
-
-// function MyComponent2() {
-//   return (
-//     <div>
-//         <p>To jest mega drugi komponent</p>
-//         <button>I jeszcze button</button>
-//     </div>
-//   );
-// } 
-
-// function MyComponent3() {
-//   return (
-//     <div>
-//         <p>A to trzeci komponent</p>
-//         <input type="text" placeholder="A to input"></input>
-//     </div>
-//   );
-// } 
-
-// ReactDOM.render(
-//   <MyComponent1 />,
-//   <MyComponent2 />,
-//   <MyComponent3 />,
-//   document.getElementById('app')
-// );
-
-
  function MojKomponent() {
   return (
     <div>
@@ -56,6 +21,20 @@ function MojKomponent2() {
       <div>
         <h1>To już hardcorowa pracowitość, robię trzeci komponent</h1>
         <h2>Trzeci komponent</h2>
+        <br/>
+        <br/>
+        <h1>Lekcja 2 - Props - czyli atrybuty w React.Js</h1>
+      </div>
+    );
+  }
+ 
+  function MojKomponent4({title,content}) {
+    return (
+      <div>
+        <dialog open>
+          <h1>{title}</h1>
+          <p>{content}</p>
+        </dialog>
       </div>
     );
   }
@@ -65,6 +44,8 @@ ReactDOM.render(
         <MojKomponent />
         <MojKomponent2 />
         <MojKomponent3 />
+        <MojKomponent4 title='Tytuł' content='Kontent' />
+
     </div>,
   document.getElementById('app')
 );
