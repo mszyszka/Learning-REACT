@@ -44,7 +44,7 @@ ReactDOM.render(
         <MojKomponent />
         <MojKomponent2 />
         <MojKomponent3 />
-        <MojKomponent4 title='Tytuł' content='Kontent' />
+        <MojKomponent4 title = 'To jest tytuł' content='Kontent' />
 
     </div>,
   document.getElementById('app')
