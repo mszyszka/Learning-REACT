@@ -1,3 +1,4 @@
+/////////////////////Lekcja 5 ///////////////////////////
 function App() {
   return (
     <div>
@@ -61,3 +62,5 @@ function ContactItem({login, name, department}) {
     </li>
     );  
 }
+
+/////////////////////Lekcja 6 - klasy jako komponenty w REACT///////////////////////////
